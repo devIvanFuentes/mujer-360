@@ -1,0 +1,72 @@
+/*------------------------------*\
+            $NAVBAR
+/*------------------------------*/
+
+nav{
+    height: 90px;
+    background: $azul;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu{
+    width: 70%;
+    box-sizing: border-box;
+}
+.logo{
+    width: 30%;
+}
+
+.logo svg{
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0;
+    list-style: none;
+}
+
+.menu li{
+    margin-right: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color:$violeta;
+}
+
+.menu a:hover{
+    color: $morado;
+}
+
+
+
+.nav__email{
+    width: 200px;
+    padding:10px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    border:0;
+}
+
+.nav__submit{
+    height: 40px;
+    padding:10px;
+    text-align: center;
+    background: $morado;
+    color: #fff;
+    border-radius: 0 10px 10px 0 ;
+    width:125px;
+    margin-left: -10px;
+    -webkit-appearance: none;
+}

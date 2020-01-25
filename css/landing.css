@@ -1,0 +1,85 @@
+/*------------------------------*\
+            $VARIABLES
+/*------------------------------*/
+/*------------------------------*\
+            $HOME
+/*------------------------------*/
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+main {
+  margin-top: 90px; }
+
+/*------------------------------*\
+            $NAVBAR
+/*------------------------------*/
+nav {
+  height: 90px;
+  background: #DAEFF5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.menu {
+  width: 70%;
+  box-sizing: border-box; }
+
+.logo {
+  width: 30%; }
+
+.logo svg {
+  padding-left: 20px;
+  box-sizing: border-box; }
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  list-style: none; }
+
+.menu li {
+  margin-right: 20px; }
+
+.menu a {
+  text-decoration: none;
+  color: #553A5B; }
+
+.menu a:hover {
+  color: #9C61A4; }
+
+.nav__email {
+  width: 200px;
+  padding: 10px;
+  height: 20px;
+  background: #fff;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  border: 0; }
+
+.nav__submit {
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: #9C61A4;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  width: 125px;
+  margin-left: -10px;
+  -webkit-appearance: none; }
+
+/*------------------------------*\
+            $HERO
+/*------------------------------*/
+.hero {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: #DAEFF5;
+  display: grid; }
+
+/*------------------------------*\
+            $UTILITIES
+/*------------------------------*/
