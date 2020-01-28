@@ -7,4 +7,89 @@
     height: calc(100vh - 90px);
     background: $azul;
     display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero__container{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: repeat(3,1fr) 50px;
+    grid-template-areas:"logo video"
+                        "description video"
+                        "icons video"
+                        "formulario .";
+    gap: 10px 20px;
+}
+
+.hero__logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__logo img{
+    max-width: 150px;
+
+}
+
+.hero__description{
+    grid-area: description;
+    line-height: 28px;
+}
+
+.hero__icons{
+    grid-area: icons;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero__icons img{
+    max-width: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero__cta{
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__video{
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+}
+
+.hero__video video{
+    width:100%;
+    box-shadow: 0 3px 120px rgba(3,61,78,0.4);
+    
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        height: auto;
+    }
+    .hero__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 300px 150px 80px 80px;
+        grid-template-areas:"logo"
+                            "video"
+                            "description"
+                            "icons"
+                            "formulario";
+        gap: 5px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
 }
